@@ -1,6 +1,7 @@
 package ru.job4j.converter;
 
 import org.junit.jupiter.api.Test;
+
 import static org.assertj.core.api.Assertions.*;
 
 class ConverterTest {
@@ -11,7 +12,7 @@ class ConverterTest {
         double expected = 2;
         double output = Converter.rubleToEuro(input);
         double value = 0.0001;
-        assertThat(output).isEqualTo(expected,withPrecision(value));
+        assertThat(output).isEqualTo(expected, withPrecision(value));
     }
 
     @Test
@@ -20,6 +21,6 @@ class ConverterTest {
         double expected = 3;
         double output = Converter.rubleToDollar(input);
         double value = 0.0001;
-        assertThat(output).isEqualTo(expected,withPrecision(value));
+        assertThat(output).isEqualTo(expected, withPrecision(value));
     }
 }
