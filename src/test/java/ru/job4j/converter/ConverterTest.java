@@ -1,7 +1,10 @@
 package ru.job4j.converter;
+
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.*;
+
 class ConverterTest {
+
     @Test
     void whenConvert180RblThen2Euro() {
         double input = 180;
@@ -10,6 +13,7 @@ class ConverterTest {
         double value = 0.0001;
         assertThat(output).isEqualTo(expected,withPrecision(value));
     }
+
     @Test
     void whenConvert225RblThen3Dollar() {
         double input = 225;
